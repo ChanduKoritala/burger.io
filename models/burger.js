@@ -13,10 +13,15 @@ var burger = {
           });
       },
 
-      update: function(cols, set_val, col_param, val_param, cb) {
-          orm.update("burgers", cols, set_val, col_param, val_param, function(res){
+      update: function(table, objColVals, condition, cb) {
+          orm.update("burgers", table, objColVals, condition, function(res){
               cb(res);
           });
+      },
+      delete: function(condition, cb) {
+          orm.delete("burgers", condition, function(res) {
+              cb(res);
+          })
       }
 }
 

@@ -1,9 +1,12 @@
-<li>
-	{{burger_name}}
-
-	<button class="change-devour" data-id="{{id}}" data-newDevour="{{devoured}}">
-		{{#if devoured}}Devoured!{{/if}}
-	</button>
-
-	<button class="devoured" data-id="{{this.id}}">Devoured!</button>
-</li>
+<div class="card burger">
+	<div class="row">	
+		<div class="col-md-8">
+			<div class="card-block">
+				<p>{{burger_name}}</p>
+				<a href="#" class={{#if devoured}} "btn btn-outline-secondary btn-sm float-right remove-devoured"
+					{{else}}"btn btn-outline-secondary btn-sm float-right change-devour"{{/if}} data-id="{{id}}">
+					{{#if devoured}}Finish Burger!{{else}}Devour it!{{/if}}</a>
+			</div>
+		</div>
+	</div>
+</div>

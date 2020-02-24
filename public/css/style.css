@@ -1,0 +1,26 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+h1{
+    text-align: center;
+}
+
+body {
+    background-color: orange;
+}
+
+#bg {
+    margin-top: 100px;
+    border: solid;
+    height: 100px;
+    margin-left: 31px;
+
+}
+#submit {
+    background-color: blue;
+    color: white;
+    margin-left: 31px;
+}
