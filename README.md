@@ -17,3 +17,6 @@ The app will store every burger in a database, whether devoured or not.
 
 ## App functionality
 ![](public/assets/functionality.gif)
+
+## URL to the deployed application
+https://desolate-sierra-85419.herokuapp.com/
